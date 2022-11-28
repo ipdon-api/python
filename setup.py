@@ -1,4 +1,16 @@
-# IPdon
+import setuptools
+
+long_desc = open("README.md").read()
+required = ["orjson", "requests"] # Comma seperated dependent libraries name
+
+setuptools.setup(
+    name="ipdon",
+    version="1.0.8",
+    author="Christian",
+    author_email="christian@ipdon.com",
+    license="MIT",
+    description="IPdon is a low-latency IP intelligence API for Python",    
+    long_description="""# IPdon
 
 [IPdon](https://ipdon.com) is a fast IP intelligence solution. This is the official Python library which benchmarks as the fastest Python library for obtaining data from any IP. 
 
@@ -75,3 +87,15 @@ Example response:
                 'timezone_utc_offset': 0.0}}
 ```
 See IPdon documentation for an elaborate description on how to use the API [here](https://ipdon.com/documentation)
+
+""",
+    long_description_content_type="text/markdown",
+    url="https://github.com/cwittenberg/ipdon/tree/main/python",    
+    project_urls={
+        "Bug Tracker": "https://github.com/cwittenberg/ipdon/issues",
+    },
+    key_words="IP intelligence, IP service, IP api, geoip, geographical IP, IP tacking",
+    install_requires=required,
+    packages=['ipdon'],
+    python_requires=">=3.6",
+)
