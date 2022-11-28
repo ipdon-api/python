@@ -1,4 +1,4 @@
-# IPdon
+# IPdon Python integration
 
 [IPdon](https://ipdon.com) is a fast IP intelligence solution. This is the official Python library which benchmarks as the fastest Python library for obtaining data from any IP. 
 
